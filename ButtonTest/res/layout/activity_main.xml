@@ -1,0 +1,57 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.buttontest.MainActivity"
+    tools:ignore="MergeRootFrame"
+    android:orientation="horizontal" >
+<TableRow android:layout_margin="0dip"
+    android:id="@+id/first_row">
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doSomething"
+        android:text="@string/button1_text"
+         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="doSomething"
+        android:text="@string/button2_text" />
+</TableRow>
+<TableRow android:layout_margin="0dip"
+        android:id="@+id/second_row">
+        <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button3_text" />
+
+        <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button4_text" />
+</TableRow>
+<TableRow android:layout_margin="0dip"
+    android:id="@+id/third_row">
+
+        
+        <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button5_text" />
+        
+        <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/button6_text" />
+    </TableRow>
+</TableLayout>
+

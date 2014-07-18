@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ButtonTest</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+	<string name="button1_text">Click Here</string>
+	<string name="button2_text">No Click ME</string>
+	<string name="button3_text">Listener Button</string>
+	<string name="button4_text">Listener Button 2</string>
+	<string name="button5_text">Inner Class</string>
+	<string name="button6_text">Interface</string>
+</resources>
