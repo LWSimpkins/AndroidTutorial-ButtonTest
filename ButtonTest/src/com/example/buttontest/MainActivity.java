@@ -41,7 +41,7 @@ import android.os.Build;
  * 4. Button by using an Interface, anonymous inner class (Button 6)
  */
 
-//2.a by implements OnClickListener from View class
+//2.a implements OnClickListener from View class
 public class MainActivity extends ActionBarActivity implements OnClickListener{
 	    
 	Button button;
@@ -63,16 +63,16 @@ public class MainActivity extends ActionBarActivity implements OnClickListener{
         another = (Button)findViewById(R.id.button4);
         another.setOnClickListener(this);
         
-        //set listener on fifth button with anonymous object
+        //3. set listener on fifth button with anonymous object
         //Or create MyButtonHandler b = new MyButtonHandler(); and pass it b
         innerClass = (Button)findViewById(R.id.button5);
         innerClass.setOnClickListener(new MyButtonHandler());
         
-        //instantiate, set listener on sixth button
-        another = (Button)findViewById(R.id.button6);
-//      another.setOnClickListener(mine);
+        //4. instantiate, set listener on sixth button
+        interfaceButton = (Button)findViewById(R.id.button6);
+//      interfaceButton.setOnClickListener(mine);
         //use the anonymous inner class directly as the listener argument
-        another.setOnClickListener(new OnClickListener(){
+        interfaceButton.setOnClickListener(new OnClickListener(){
         	public void onClick(View v){
         		Log.d("APP", "Sixth button was clicked");
         	}
